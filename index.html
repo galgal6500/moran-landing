@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>מורן | גבות בסטייל</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Heebo:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --cream: #FAF7F2;
+    --beige: #F0E8DC;
+    --gold: #C9A96E;
+    --gold-light: #E8D5B0;
+    --rose: #E8C4C4;
+    --rose-deep: #C49898;
+    --dark: #2C2118;
+    --text: #3D2E22;
+    --muted: #8B7355;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Heebo', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    overflow-x: hidden;
+  }
+
+  /* HERO */
+  .hero {
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    background-image: url("data:image/jpeg;base64,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");
+    background-size: cover;
+    background-position: center top;
+    padding: 40px 24px 120px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(44,33,24,0.15) 0%,
+      rgba(44,33,24,0.1) 30%,
+      rgba(44,33,24,0.55) 65%,
+      rgba(44,33,24,0.85) 100%
+    );
+  }
+
+  .hero::after {
+    content: none;
+  }
+
+  .logo-area {
+    margin-bottom: 24px;
+    animation: fadeUp 0.8s ease both;
+    position: relative;
+  }
+
+  .logo-circle {
+    width: 100px; height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold), var(--gold-light));
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 16px;
+    box-shadow: 0 8px 30px rgba(201,169,110,0.3);
+  }
+
+  .logo-circle span {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: white;
+    font-style: italic;
+  }
+
+  .brand-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: var(--gold-light);
+    letter-spacing: 6px;
+    font-weight: 400;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(36px, 8vw, 64px);
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 16px;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    animation: fadeUp 0.8s 0.1s ease both;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+
+  .hero p {
+    font-size: 17px;
+    color: rgba(255,255,255,0.85);
+    font-weight: 300;
+    margin-bottom: 48px;
+    max-width: 320px;
+    line-height: 1.7;
+    animation: fadeUp 0.8s 0.2s ease both;
+    text-shadow: 0 1px 8px rgba(0,0,0,0.2);
+  }
+
+  /* BUTTONS */
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    max-width: 340px;
+    animation: fadeUp 0.8s 0.3s ease both;
+  }
+
+  .btn-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    border-radius: 16px;
+    text-decoration: none;
+    font-family: 'Heebo', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .btn-main:active { transform: scale(0.97); }
+
+  .btn-icon { font-size: 24px; }
+  .btn-arrow { font-size: 20px; opacity: 0.6; }
+
+  .btn-gold {
+    background: linear-gradient(135deg, var(--gold), #B8894A);
+    color: white;
+    box-shadow: 0 8px 24px rgba(201,169,110,0.35);
+  }
+
+  .btn-rose {
+    background: linear-gradient(135deg, var(--rose), var(--rose-deep));
+    color: white;
+    box-shadow: 0 8px 24px rgba(196,152,152,0.35);
+  }
+
+  .btn-dark {
+    background: var(--dark);
+    color: var(--gold-light);
+    box-shadow: 0 8px 24px rgba(44,33,24,0.2);
+  }
+
+  /* SCROLL INDICATOR */
+  .scroll-hint {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    color: var(--muted);
+    font-size: 12px;
+    animation: bounce 2s infinite;
+  }
+
+  .scroll-hint::after {
+    content: '↓';
+    font-size: 18px;
+    color: var(--gold);
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(6px); }
+  }
+
+  /* BEFORE/AFTER SECTION */
+  .section {
+    padding: 72px 24px;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 6vw, 40px);
+    text-align: center;
+    margin-bottom: 8px;
+    color: var(--dark);
+  }
+
+  .section-title em { color: var(--gold); font-style: italic; }
+
+  .section-sub {
+    text-align: center;
+    color: var(--muted);
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 40px;
+  }
+
+  .ba-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .ba-card {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .ba-placeholder {
+    aspect-ratio: 3/4;
+    background: linear-gradient(160deg, var(--beige), var(--gold-light));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .ba-placeholder span { font-size: 32px; }
+
+  .ba-label {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: rgba(44,33,24,0.7);
+    backdrop-filter: blur(8px);
+    color: white;
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-weight: 500;
+  }
+
+  /* REVIEWS */
+  .reviews-section {
+    background: var(--dark);
+    padding: 72px 24px;
+    overflow: hidden;
+  }
+
+  .reviews-section .section-title { color: var(--gold-light); }
+  .reviews-section .section-sub { color: var(--muted); }
+
+  .reviews-scroll {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 8px 4px 16px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .reviews-scroll::-webkit-scrollbar { display: none; }
+
+  .review-card {
+    flex-shrink: 0;
+    width: 260px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(201,169,110,0.2);
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .stars { color: var(--gold); font-size: 16px; margin-bottom: 12px; letter-spacing: 2px; }
+
+  .review-text {
+    font-size: 14px;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.7;
+    margin-bottom: 16px;
+    font-weight: 300;
+  }
+
+  .reviewer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .reviewer-avatar {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold), var(--rose-deep));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .reviewer-name {
+    font-size: 13px;
+    color: var(--gold-light);
+    font-weight: 500;
+  }
+
+  /* SERVICES DETAIL */
+  .services-section {
+    padding: 72px 24px;
+    background: white;
+  }
+
+  .service-card {
+    background: var(--cream);
+    border-radius: 24px;
+    padding: 28px;
+    margin-bottom: 16px;
+    border: 1px solid var(--beige);
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .service-icon {
+    width: 56px; height: 56px;
+    border-radius: 16px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 26px;
+    flex-shrink: 0;
+  }
+
+  .service-icon.gold { background: linear-gradient(135deg, #FDF4E7, var(--gold-light)); }
+  .service-icon.rose { background: linear-gradient(135deg, #FDF0F0, var(--rose)); }
+  .service-icon.dark { background: linear-gradient(135deg, #EDE8E2, var(--beige)); }
+
+  .service-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: var(--dark);
+    margin-bottom: 6px;
+  }
+
+  .service-info p {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+    font-weight: 300;
+    margin-bottom: 14px;
+  }
+
+  .service-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--gold);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+
+  .service-cta:active { opacity: 0.85; }
+
+  /* FORM */
+  .form-section {
+    padding: 72px 24px;
+    background: var(--cream);
+  }
+
+  .form-box {
+    background: white;
+    border-radius: 28px;
+    padding: 32px 24px;
+    max-width: 480px;
+    margin: 0 auto;
+    box-shadow: 0 4px 40px rgba(44,33,24,0.08);
+    border: 1px solid var(--beige);
+  }
+
+  .form-box h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: var(--dark);
+    margin-bottom: 6px;
+  }
+
+  .form-box p {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 28px;
+    font-weight: 300;
+  }
+
+  .field {
+    margin-bottom: 16px;
+  }
+
+  .field label {
+    display: block;
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+
+  .field input, .field select, .field textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1.5px solid var(--beige);
+    border-radius: 12px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 15px;
+    color: var(--dark);
+    background: var(--cream);
+    outline: none;
+    transition: border-color 0.2s;
+    -webkit-appearance: none;
+  }
+
+  .field input:focus, .field select:focus, .field textarea:focus {
+    border-color: var(--gold);
+  }
+
+  .field textarea { resize: none; height: 90px; }
+
+  .submit-btn {
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(135deg, var(--gold), #B8894A);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 8px;
+    box-shadow: 0 8px 24px rgba(201,169,110,0.35);
+    transition: transform 0.2s;
+  }
+
+  .submit-btn:active { transform: scale(0.98); }
+
+  /* FLOATING WA BUTTON */
+  .wa-float {
+    position: fixed;
+    bottom: 28px;
+    left: 24px;
+    width: 58px; height: 58px;
+    border-radius: 50%;
+    background: #25D366;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 8px 24px rgba(37,211,102,0.4);
+    z-index: 100;
+    text-decoration: none;
+    animation: pulse 2.5s infinite;
+  }
+
+  .wa-float svg { width: 28px; height: 28px; fill: white; }
+
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 8px 24px rgba(37,211,102,0.4); }
+    50% { box-shadow: 0 8px 32px rgba(37,211,102,0.65); }
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--dark);
+    padding: 40px 24px;
+    text-align: center;
+  }
+
+  footer .brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: var(--gold);
+    font-style: italic;
+    margin-bottom: 8px;
+  }
+
+  footer p {
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 300;
+  }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* SUCCESS MESSAGE */
+  .success-msg {
+    display: none;
+    text-align: center;
+    padding: 24px;
+  }
+
+  .success-msg.show { display: block; }
+
+  .success-icon {
+    font-size: 48px;
+    margin-bottom: 12px;
+  }
+
+  .success-msg h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: var(--dark);
+    margin-bottom: 8px;
+  }
+
+  .success-msg p {
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  /* POPUP */
+  .drawer-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(44,33,24,0.65);
+    z-index: 200;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .drawer-overlay.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .drawer {
+    background: var(--cream);
+    border-radius: 28px;
+    z-index: 201;
+    width: 100%;
+    max-width: 480px;
+    max-height: 88svh;
+    overflow-y: auto;
+    transform: scale(0.92) translateY(20px);
+    opacity: 0;
+    transition: transform 0.35s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.3s ease;
+    position: relative;
+  }
+
+  .drawer-overlay.open .drawer {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+
+  .drawer-handle { display: none; }
+
+  .drawer-header {
+    padding: 20px 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .drawer-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: var(--dark);
+    font-weight: 700;
+  }
+
+  .drawer-title em { color: var(--gold); font-style: italic; }
+
+  .drawer-close {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: var(--beige);
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--muted);
+  }
+
+  .drawer-content {
+    padding: 24px;
+  }
+
+  /* TREATMENT INFO */
+  .treatment-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, #FDF4E7, var(--gold-light));
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px 14px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+    border: 1px solid var(--gold-light);
+  }
+
+  .treatment-desc {
+    font-size: 16px;
+    color: var(--text);
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 24px;
+  }
+
+  .treatment-bullets {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+
+  .treatment-bullet {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: var(--text);
+    font-weight: 400;
+  }
+
+  .bullet-icon {
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #FDF4E7, var(--gold-light));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 15px;
+    flex-shrink: 0;
+  }
+
+  /* GALLERY */
+  .gallery-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: var(--dark);
+    margin-bottom: 14px;
+  }
+
+  .gallery-title em { color: var(--gold); font-style: italic; }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+
+  .gallery-item {
+    aspect-ratio: 1;
+    border-radius: 14px;
+    background: linear-gradient(160deg, var(--beige), var(--gold-light));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: var(--muted);
+    font-size: 11px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .gallery-item span { font-size: 22px; }
+
+  .gallery-item img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    position: absolute; inset: 0;
+  }
+
+  /* WA BUTTON */
+  .wa-big-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    padding: 20px;
+    background: #25D366;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 8px 28px rgba(37,211,102,0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 12px;
+  }
+
+  .wa-big-btn:active {
+    transform: scale(0.97);
+    box-shadow: 0 4px 16px rgba(37,211,102,0.3);
+  }
+
+  .wa-big-btn svg { width: 26px; height: 26px; fill: white; flex-shrink: 0; }
+
+  .wa-note {
+    text-align: center;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 300;
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="logo-area">
+    <div class="brand-name">MORAN</div>
+  </div>
+
+  <h1>גבות שמספרות<br>את <em>הסיפור שלך</em></h1>
+  <p>טיפולי יוקרה לגבות, מיקרובליידינג וקורסים מקצועיים — כי את ראויה לפחות ממה שאת מדמיינת</p>
+
+  <div class="hero-buttons">
+    <a href="#" onclick="openDrawer('gabot'); return false;" class="btn-main btn-gold">
+      <span class="btn-icon">✨</span>
+      <span>טיפולי גבות</span>
+      <span class="btn-arrow">←</span>
+    </a>
+    <a href="#" onclick="openDrawer('micro'); return false;" class="btn-main btn-rose">
+      <span class="btn-icon">🖊️</span>
+      <span>מיקרובליידינג</span>
+      <span class="btn-arrow">←</span>
+    </a>
+    <a href="#" onclick="openDrawer('coruses'); return false;" class="btn-main btn-dark">
+      <span class="btn-icon">🎓</span>
+      <span>קורסים מקצועיים</span>
+      <span class="btn-arrow">←</span>
+    </a>
+  </div>
+
+  <div class="scroll-hint">גלי למטה</div>
+</section>
+
+<!-- BEFORE/AFTER -->
+<section class="section">
+  <h2 class="section-title reveal">תוצאות <em>אמיתיות</em></h2>
+  <p class="section-sub reveal">לפני ואחרי — הטרנספורמציה שאת מחפשת</p>
+
+  <div class="ba-grid reveal">
+    <div class="ba-card">
+      <div class="ba-placeholder">
+        <span>📸</span>
+        תמונה לפני
+      </div>
+      <div class="ba-label">לפני</div>
+    </div>
+    <div class="ba-card">
+      <div class="ba-placeholder" style="background: linear-gradient(160deg, #F0E8DC, #C9A96E30);">
+        <span>✨</span>
+        תמונה אחרי
+      </div>
+      <div class="ba-label">אחרי</div>
+    </div>
+    <div class="ba-card">
+      <div class="ba-placeholder">
+        <span>📸</span>
+        תמונה לפני
+      </div>
+      <div class="ba-label">לפני</div>
+    </div>
+    <div class="ba-card">
+      <div class="ba-placeholder" style="background: linear-gradient(160deg, #F0E8DC, #E8C4C430);">
+        <span>✨</span>
+        תמונה אחרי
+      </div>
+      <div class="ba-label">אחרי</div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section">
+  <h2 class="section-title reveal">לקוחות <em>מרוצות</em></h2>
+  <p class="section-sub reveal">מה אומרות עליי</p>
+
+  <div class="reviews-scroll">
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"מורן פשוט קסמה לי! הגבות יצאו מושלמות ועשתה את זה עם כל כך הרבה אהבה ומקצועיות. חזרתי כבר 3 פעמים!"</p>
+      <div class="reviewer">
+        <div class="reviewer-avatar">נ</div>
+        <div class="reviewer-name">נועה כ.</div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"עשיתי מיקרובליידינג אצל מורן ולא יכולתי להאמין לעצמי. כל כך טבעי! כולן שואלות אותי מה עשיתי לגבות 😍"</p>
+      <div class="reviewer">
+        <div class="reviewer-avatar">מ</div>
+        <div class="reviewer-name">מיכל ר.</div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"עשיתי את הקורס ויצאתי עם כלים אמיתיים לעסק. מורן מסבירה בצורה ברורה, סבלנית ועם המון ידע. ממליצה בחום!"</p>
+      <div class="reviewer">
+        <div class="reviewer-avatar">ש</div>
+        <div class="reviewer-name">שירה ב.</div>
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"הגעתי עם גבות שהיו ריקות ויצאתי עם גבות חלומיות. מורן קלעה בדיוק למה שרציתי, אפילו בלי שאמרתי."</p>
+      <div class="reviewer">
+        <div class="reviewer-avatar">ת</div>
+        <div class="reviewer-name">תמר ל.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="brand">Moran</div>
+  <p>כל הזכויות שמורות © 2025</p>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/972XXXXXXXXX?text=היי מורן! 🌸" class="wa-float" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+
+
+<!-- DRAWER: טיפולי גבות -->
+<div class="drawer-overlay" id="overlayGabot" onclick="if(event.target===this)closeDrawer('gabot')"><div class="drawer" id="drawerGabot">
+  <div class="drawer-handle"></div>
+  <div class="drawer-header">
+    <div class="drawer-title">טיפולי <em>גבות</em></div>
+    <button class="drawer-close" onclick="closeDrawer('gabot')">✕</button>
+  </div>
+  <div class="drawer-content">
+
+    <div class="treatment-tag">✨ טיפול יוקרתי</div>
+
+    <p class="treatment-desc">
+      עיצוב גבות מקצועי שמותאם אישית למבנה הפנים שלך.
+      הטיפול כולל עיצוב, הסרת שיער מדויקת וצביעה — כדי שתצאי עם גבות מושלמות שמחזיקות שבועות.
+    </p>
+
+    <div class="treatment-bullets">
+      <div class="treatment-bullet">
+        <div class="bullet-icon">⏱️</div>
+        <span>משך הטיפול: כ-45 דקות</span>
+      </div>
+      <div class="treatment-bullet">
+        <div class="bullet-icon">🎯</div>
+        <span>מותאם אישית למבנה הפנים שלך</span>
+      </div>
+      <div class="treatment-bullet">
+        <div class="bullet-icon">✨</div>
+        <span>עיצוב + הסרה + צביעה</span>
+      </div>
+      <div class="treatment-bullet">
+        <div class="bullet-icon">💛</div>
+        <span>תוצאה שמחזיקה שבועות</span>
+      </div>
+    </div>
+
+    <div class="gallery-title">עבודות <em>שלי</em></div>
+    <div class="gallery-grid">
+      <div class="gallery-item"><span>📸</span>תמונה</div>
+      <div class="gallery-item"><span>📸</span>תמונה</div>
+      <div class="gallery-item"><span>📸</span>תמונה</div>
+      <div class="gallery-item"><span>📸</span>תמונה</div>
+      <div class="gallery-item"><span>📸</span>תמונה</div>
+      <div class="gallery-item"><span>📸</span>תמונה</div>
+    </div>
+
+    <a href="https://wa.me/972XXXXXXXXX?text=היי מורן! אני רוצה לקבוע תור לטיפול גבות ✨" class="wa-big-btn">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      קביעת תור עכשיו
+    </a>
+    <p class="wa-note">מגיבה בדרך כלל תוך שעה 🌸</p>
+
+  </div>
+</div>
+</div>
+
+<script>
+  function capitalizeFirst(s) {
+    return s.charAt(0).toUpperCase() + s.slice(1);
+  }
+
+  function openDrawer(id) {
+    document.getElementById('overlay' + capitalizeFirst(id)).classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDrawer(id) {
+    document.getElementById('overlay' + capitalizeFirst(id)).classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // Scroll reveal
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Form submit
+  const form = document.getElementById('courseForm');
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      this.style.display = 'none';
+      document.getElementById('successMsg').classList.add('show');
+    });
+  }
+</script>
+
+
+<!-- POPUP: מיקרובליידינג -->
+<div class="drawer-overlay" id="overlayMicro" onclick="if(event.target===this)closeDrawer('micro')">
+  <div class="drawer" id="drawerMicro">
+    <div class="drawer-header" style="padding:24px 24px 0;">
+      <div class="drawer-title">מיקרו<em>בליידינג</em></div>
+      <button class="drawer-close" onclick="closeDrawer('micro')">✕</button>
+    </div>
+    <div class="drawer-content">
+
+      <div class="treatment-tag">🖊️ קעקוע גבות</div>
+
+      <p class="treatment-desc">
+        מיקרובליידינג היא טכניקת קעקוע חצי קבוע שיוצרת שערות גבה מלאכותיות ריאליסטיות. 
+        התוצאה — גבות טבעיות, מלאות ומושלמות שמחזיקות שנה עד שנתיים, ללא צורך בעיפרון גבות כל יום.
+      </p>
+
+      <div class="treatment-bullets">
+        <div class="treatment-bullet">
+          <div class="bullet-icon">⏱️</div>
+          <span>משך הטיפול: כ-2.5 שעות</span>
+        </div>
+        <div class="treatment-bullet">
+          <div class="bullet-icon">📅</div>
+          <span>מחזיק 1-2 שנים</span>
+        </div>
+        <div class="treatment-bullet">
+          <div class="bullet-icon">💉</div>
+          <span>כולל טיפול ריענון לאחר 4-6 שבועות</span>
+        </div>
+        <div class="treatment-bullet">
+          <div class="bullet-icon">🌿</div>
+          <span>תוצאה טבעית לחלוטין</span>
+        </div>
+        <div class="treatment-bullet">
+          <div class="bullet-icon">😌</div>
+          <span>כמעט ללא כאב עם קרם הרדמה</span>
+        </div>
+      </div>
+
+      <div class="gallery-title">עבודות <em>שלי</em></div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><span>📸</span>תמונה</div>
+        <div class="gallery-item"><span>📸</span>תמונה</div>
+        <div class="gallery-item"><span>📸</span>תמונה</div>
+        <div class="gallery-item"><span>📸</span>תמונה</div>
+        <div class="gallery-item"><span>📸</span>תמונה</div>
+        <div class="gallery-item"><span>📸</span>תמונה</div>
+      </div>
+
+      <a href="https://wa.me/972XXXXXXXXX?text=היי מורן! אני מעוניינת במיקרובליידינג 🖊️" class="wa-big-btn">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        קביעת תור עכשיו
+      </a>
+      <p class="wa-note">מגיבה בדרך כלל תוך שעה 🌸</p>
+
+    </div>
+  </div>
+</div>
+
+<!-- POPUP: קורסים -->
+<div class="drawer-overlay" id="overlayCoruses" onclick="if(event.target===this)closeDrawer('coruses')">
+  <div class="drawer" id="drawerCoruses">
+    <div class="drawer-header" style="padding:24px 24px 0;">
+      <div class="drawer-title">קורסים <em>מקצועיים</em></div>
+      <button class="drawer-close" onclick="closeDrawer('coruses')">✕</button>
+    </div>
+    <div class="drawer-content">
+
+      <p class="treatment-desc" style="margin-bottom:20px;">
+        תלמדי את המקצוע מהאחת הטובות בתחום. קורסים מעשיים עם ליווי אישי, כלים מקצועיים וידע שיקח אותך לרמה הבאה.
+      </p>
+
+      <!-- כרטיסי קורסים -->
+      <div style="display:grid;gap:12px;margin-bottom:24px;">
+
+        <div onclick="selectCourse('קורס מיקרובליידינג')" id="course1" style="border:2px solid var(--beige);border-radius:18px;padding:18px;cursor:pointer;transition:all 0.2s;background:white;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--dark);font-weight:700;">🖊️ קורס מיקרובליידינג</div>
+            <div id="check1" style="width:24px;height:24px;border-radius:50%;border:2px solid var(--beige);display:flex;align-items:center;justify-content:center;font-size:13px;transition:all 0.2s;"></div>
+          </div>
+          <p style="font-size:13px;color:var(--muted);font-weight:300;line-height:1.6;margin-bottom:10px;">טכניקת קעקוע חצי קבוע שיוצרת גבות טבעיות ומושלמות. תצאי עם ידע מקצועי מלא ותיק עבודות.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="background:var(--beige);color:var(--muted);font-size:12px;padding:3px 10px;border-radius:999px;">🖊️ קעקוע חצי קבוע</span>
+            <span style="background:var(--beige);color:var(--muted);font-size:12px;padding:3px 10px;border-radius:999px;">📈 כל הרמות</span>
+          </div>
+        </div>
+
+        <div onclick="selectCourse('קורס עיצוב גבות')" id="course2" style="border:2px solid var(--beige);border-radius:18px;padding:18px;cursor:pointer;transition:all 0.2s;background:white;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--dark);font-weight:700;">✨ קורס עיצוב גבות</div>
+            <div id="check2" style="width:24px;height:24px;border-radius:50%;border:2px solid var(--beige);display:flex;align-items:center;justify-content:center;font-size:13px;transition:all 0.2s;"></div>
+          </div>
+          <p style="font-size:13px;color:var(--muted);font-weight:300;line-height:1.6;margin-bottom:10px;">עיצוב, הסרה וצביעת גבות ברמה מקצועית. הבסיס שכל טכנאית גבות צריכה.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="background:var(--beige);color:var(--muted);font-size:12px;padding:3px 10px;border-radius:999px;">✨ עיצוב וצביעה</span>
+            <span style="background:var(--beige);color:var(--muted);font-size:12px;padding:3px 10px;border-radius:999px;">👩‍🎓 למתחילות</span>
+          </div>
+        </div>
+
+        <div onclick="selectCourse('יום השתלמות')" id="course3" style="border:2px solid var(--beige);border-radius:18px;padding:18px;cursor:pointer;transition:all 0.2s;background:white;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--dark);font-weight:700;">🌟 ימי השתלמות</div>
+            <div id="check3" style="width:24px;height:24px;border-radius:50%;border:2px solid var(--beige);display:flex;align-items:center;justify-content:center;font-size:13px;transition:all 0.2s;"></div>
+          </div>
+          <p style="font-size:13px;color:var(--muted);font-weight:300;line-height:1.6;margin-bottom:10px;">לאלה שכבר עובדות בתחום ורוצות לחדד, לשדרג ולרענן — יום אינטנסיבי של למידה מעשית.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="background:var(--beige);color:var(--muted);font-size:12px;padding:3px 10px;border-radius:999px;">🎯 לבעלות ניסיון</span>
+            <span style="background:var(--beige);color:var(--muted);font-size:12px;padding:3px 10px;border-radius:999px;">⚡ יום אינטנסיבי</span>
+          </div>
+        </div>
+
+        <div onclick="selectCourse('עדיין לא בטוחה')" id="course4" style="border:2px solid var(--beige);border-radius:18px;padding:18px;cursor:pointer;transition:all 0.2s;background:white;">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--dark);font-weight:700;">🤍 עדיין לא בטוחה</div>
+            <div id="check4" style="width:24px;height:24px;border-radius:50%;border:2px solid var(--beige);display:flex;align-items:center;justify-content:center;font-size:13px;transition:all 0.2s;"></div>
+          </div>
+          <p style="font-size:13px;color:var(--muted);font-weight:300;line-height:1.6;margin-top:8px;">מורן תעזור לך לבחור את הקורס המתאים בשיחה קצרה.</p>
+        </div>
+
+      </div>
+
+      <!-- טופס -->
+      <div id="courseFormSection" style="display:none;">
+        <div style="border-top:1px solid var(--beige);padding-top:20px;margin-bottom:20px;">
+          <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--dark);margin-bottom:16px;">פרטים ליצירת קשר</div>
+          <div style="display:grid;gap:12px;">
+            <input type="text" id="courseName" placeholder="שם מלא *" style="width:100%;padding:14px 16px;border:1.5px solid var(--beige);border-radius:12px;font-family:'Heebo',sans-serif;font-size:15px;color:var(--dark);background:var(--cream);outline:none;">
+            <input type="tel" id="coursePhone" placeholder="מספר טלפון *" style="width:100%;padding:14px 16px;border:1.5px solid var(--beige);border-radius:12px;font-family:'Heebo',sans-serif;font-size:15px;color:var(--dark);background:var(--cream);outline:none;">
+            <input type="text" id="courseExtra" placeholder="משהו שחשוב לך שנדע (אופציונלי)" style="width:100%;padding:14px 16px;border:1.5px solid var(--beige);border-radius:12px;font-family:'Heebo',sans-serif;font-size:15px;color:var(--dark);background:var(--cream);outline:none;">
+          </div>
+        </div>
+
+        <button onclick="submitCourseForm()" style="width:100%;padding:20px;background:linear-gradient(135deg,var(--gold),#B8894A);color:white;border:none;border-radius:18px;font-family:'Heebo',sans-serif;font-size:18px;font-weight:600;cursor:pointer;box-shadow:0 8px 28px rgba(201,169,110,0.35);margin-bottom:12px;">
+          שלחי פנייה ✨
+        </button>
+        <p style="text-align:center;font-size:13px;color:var(--muted);font-weight:300;">מורן תחזור אלייך תוך שעה 🌸</p>
+      </div>
+
+      <!-- הצלחה -->
+      <div id="courseSuccess" style="display:none;text-align:center;padding:20px 0;">
+        <div style="font-size:48px;margin-bottom:12px;">🌸</div>
+        <div style="font-family:'Playfair Display',serif;font-size:22px;color:var(--dark);margin-bottom:8px;">קיבלנו!</div>
+        <p style="font-size:14px;color:var(--muted);font-weight:300;">מורן תחזור אלייך בהקדם ותעזור לך לבחור את הקורס המושלם עבורך ✨</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+  let selectedCourse = '';
+
+  function selectCourse(name) {
+    selectedCourse = name;
+    ['1','2','3','4'].forEach(i => {
+      const card = document.getElementById('course'+i);
+      const check = document.getElementById('check'+i);
+      if (!card) return;
+      card.style.borderColor = 'var(--beige)';
+      card.style.background = 'white';
+      check.innerHTML = '';
+      check.style.borderColor = 'var(--beige)';
+      check.style.background = 'transparent';
+      check.style.color = '';
+    });
+    const map = {'קורס מיקרובליידינג':'1','קורס עיצוב גבות':'2','יום השתלמות':'3','עדיין לא בטוחה':'4'};
+    const idx = map[name];
+    document.getElementById('course'+idx).style.borderColor = 'var(--gold)';
+    document.getElementById('course'+idx).style.background = '#FDF9F2';
+    document.getElementById('check'+idx).innerHTML = '✓';
+    document.getElementById('check'+idx).style.background = 'var(--gold)';
+    document.getElementById('check'+idx).style.color = 'white';
+    document.getElementById('check'+idx).style.borderColor = 'var(--gold)';
+    document.getElementById('courseFormSection').style.display = 'block';
+    document.getElementById('courseFormSection').scrollIntoView({behavior:'smooth',block:'nearest'});
+  }
+
+  function submitCourseForm() {
+    const name = document.getElementById('courseName').value.trim();
+    const phone = document.getElementById('coursePhone').value.trim();
+    if (!name || !phone) { alert('נא למלא שם וטלפון'); return; }
+    const msg = encodeURIComponent('היי מורן! 🌸 קוראים לי ' + name + ' ואני מעוניינת ב' + selectedCourse + '. הטלפון שלי: ' + phone);
+    window.open('https://wa.me/972XXXXXXXXX?text=' + msg, '_blank');
+    document.getElementById('courseFormSection').style.display = 'none';
+    document.getElementById('courseSuccess').style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
