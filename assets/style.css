@@ -424,3 +424,5 @@ html.a11y-still .reveal { opacity: 1; transform: none; }
   .nav.open .dropdown.open .menu { display: block; }
   .nav.open .menu a { font-size: 16px; padding: 10px 14px; color: var(--muted); }
 }
+.signature { font-family: "Cormorant Garamond", "Heebo", serif; font-size: 22px; margin-top: 24px; }
+.signature b { font-weight: 500; color: var(--taupe-dark); }
