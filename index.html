@@ -14,13 +14,21 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232C2118'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia,serif' font-size='26' fill='%23C9A96E'%3EMO%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<a class="skip" href="#main">דילוג לתוכן</a>
+<div class="topbar" aria-hidden="true"><div class="marquee"><span>✦ קביעת תור בוואטסאפ – מגיבה בדרך כלל תוך שעה ✦ קורסים מקצועיים בקבוצות קטנות ✦ מיקרובליידינג · היפראליזם · עיצוב ושיקום גבות ✦ תעודה רשמית לבוגרות</span><span>✦ קביעת תור בוואטסאפ – מגיבה בדרך כלל תוך שעה ✦ קורסים מקצועיים בקבוצות קטנות ✦ מיקרובליידינג · היפראליזם · עיצוב ושיקום גבות ✦ תעודה רשמית לבוגרות</span></div></div>
 <header class="header">
-  <div class="container">
+  <div class="container header-row">
+    <button class="burger" type="button" aria-label="תפריט" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 8h16M8 14h12"/></svg></button>
     <a class="logo" href="index.html"><b>MORAN ODED</b><span>EYEBROW ARTIST</span></a>
+    <div class="header-cta">
+      <a class="btn btn-taupe" href="#" data-wa="היי מורן, אשמח לקבוע תור 🌸">קביעת תור</a>
+    </div>
+  </div>
+  <div class="container">
     <nav class="nav" aria-label="ניווט ראשי">
       <a href="index.html" class="active">בית</a>
       <div class="dropdown">
@@ -32,31 +40,33 @@
       <a href="about.html">אודות</a>
       <a href="contact.html">צור קשר</a>
     </nav>
-    <div class="header-cta">
-      <a class="btn btn-gold" href="#" data-wa="היי מורן, אשמח לקבוע תור 🌸"><span class="btn-text">קביעת תור</span><span class="btn-icon" aria-hidden="true">📅</span></a>
-      <button class="burger" type="button" aria-label="תפריט" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-    </div>
   </div>
 </header>
-<main>
+<main id="main">
 
-<section class="hero">
-  <div class="container">
-    <div class="reveal">
-      <span class="eyebrow">Moran Oded · Eyebrow Artist</span>
-      <h1>גבות שמספרות <em>את הסיפור שלך</em></h1>
-      <p class="lead">קליניקה לעיצוב גבות ומיקרופיגמנטציה, ואקדמיה לקורסים מקצועיים. כל טיפול מותאם אישית למבנה הפנים שלך, לתוצאה טבעית ומדויקת.</p>
-      <div class="hero-actions">
-        <a class="btn btn-wa" href="#" data-wa="היי מורן, אשמח לקבוע תור 🌸"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.66.15-.2.3-.76.96-.93 1.16-.17.2-.34.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.41z"/></svg><span>קביעת תור בוואטסאפ</span></a>
-        <a class="btn btn-outline" href="#treatments">לכל הטיפולים</a>
-      </div>
-      <div class="hero-badges">
-        <div><b><span class="todo">להשלים: מספר</span></b>שנות ניסיון</div>
-        <div><b><span class="todo">להשלים: מספר</span></b>לקוחות מרוצות</div>
-        <div><b>5★</b>המלצות לקוחות</div>
-      </div>
+<section class="hero-full">
+  <img class="hero-bg" src="assets/moran.jpg" alt="" aria-hidden="true">
+  <div class="hero-overlay"></div>
+  <div class="hero-content reveal">
+    <span class="eyebrow light">EYEBROW ARTIST</span>
+    <h1>מורן עודד</h1>
+    <p>קליניקה לעיצוב גבות ומיקרופיגמנטציה | אקדמיה, קורסים והשתלמויות</p>
+    <div class="hero-actions">
+      <a class="btn btn-taupe" href="#treatments">הטיפולים שלנו</a>
+      <a class="btn btn-light" href="#" data-wa="היי מורן, אשמח לקבוע תור 🌸">צרי קשר</a>
     </div>
-    <div class="hero-photo reveal"><img src="assets/moran.jpg" alt="מורן עודד, מעצבת גבות"></div>
+  </div>
+</section>
+
+<section class="tagline">
+  <div class="container center reveal">
+    <h2 class="tag-big">טבעי. מדויק. <em>שלך.</em></h2>
+    <p class="lead">כל גבה מתוכננת לפי מבנה הפנים, צבע השיער והעור שלך – כדי שתיראי את עצמך, רק במיטבך.</p>
+    <div class="stats">
+      <div><b><span class="todo">להשלים: מספר</span></b><span>שנות ניסיון</span></div>
+      <div><b><span class="todo">להשלים: מספר</span></b><span>לקוחות מרוצות</span></div>
+      <div><b>5★</b><span>דירוג המלצות</span></div>
+    </div>
   </div>
 </section>
 
@@ -106,9 +116,13 @@
   <div class="container">
     <div class="center reveal" style="margin-bottom:40px">
       <span class="eyebrow">לקוחות מרוצות</span>
-      <h2 class="section-title">מה אומרות <em class="gold">עליי</em></h2>
+      <h2 class="section-title">לקוחות <em class="gold">ממליצות</em></h2>
     </div>
-    <div class="reviews"><div class="review reveal"><div class="stars">★★★★★</div><p>"שאת לא ספק הבחירה הטובה ביותר!! אני ממש שמחה שהכרתי אותך. את מורה מושלמת ובכלל אישיות מדהימה. נהנתי מקסימום 100/100"</p><div class="who">— תלמידת קורס</div></div><div class="review reveal"><div class="stars">★★★★★</div><p>"מגיל 11 אני עושה גבות ועברתי כל כך הרבה מעצבות... פשוט אלופה עם ידיי זהב. באמת אין לי מילה אחרת. תודה מיליון פעם!"</p><div class="who">— לקוחה קבועה</div></div><div class="review reveal"><div class="stars">★★★★★</div><p>"רציתי להגיד לך באמת שעשית לי שינוי מטורף בגבות רק אחרי הטיפול הראשון! אני ממש מרוצה ברמות. שמחה שבחרתי בך 💗"</p><div class="who">— לקוחה חדשה</div></div><div class="review reveal"><div class="stars">★★★★★</div><p>"הגבות מושלמות הי החסרון הכי גדול שלי ומאז שעשית זה נראה לי מושלם. אני מרגישה הרבה יותר טוב עם עצמי. הכי טוב שעשיתי שבחרתי בך"</p><div class="who">— לקוחת מיקרובליידינג</div></div><div class="review reveal"><div class="stars">★★★★★</div><p>"תודה כל תודה על כל הידע שהעברת לי. מורה מושלמת ומקצועית שמסבירה הכל בצורה נדירה. שמחה שבחרתי לעשות את הקורס אצלך 💕"</p><div class="who">— תלמידת קורס</div></div><div class="review reveal"><div class="stars">★★★★★</div><p>"כבר מלא זמן רוצה לרשום לך ופשוט לא יצא לי אבל הגבות יצאו מושלם אהבתי ממש. יצא טבעי בדיוק כמו שרציתי תודה רבה. את אלופה!"</p><div class="who">— לקוחת גבות</div></div></div>
+    <div class="carousel" data-carousel>
+  <button class="car-btn prev" type="button" aria-label="הקודם">›</button>
+  <div class="track" tabindex="0" aria-label="המלצות לקוחות"><div class="slide"><div class="review"><div class="stars">★★★★★</div><p>"שאת לא ספק הבחירה הטובה ביותר!! אני ממש שמחה שהכרתי אותך. את מורה מושלמת ובכלל אישיות מדהימה. נהנתי מקסימום 100/100"</p><div class="who">— תלמידת קורס</div></div></div><div class="slide"><div class="review"><div class="stars">★★★★★</div><p>"מגיל 11 אני עושה גבות ועברתי כל כך הרבה מעצבות... פשוט אלופה עם ידיי זהב. באמת אין לי מילה אחרת. תודה מיליון פעם!"</p><div class="who">— לקוחה קבועה</div></div></div><div class="slide"><div class="review"><div class="stars">★★★★★</div><p>"רציתי להגיד לך באמת שעשית לי שינוי מטורף בגבות רק אחרי הטיפול הראשון! אני ממש מרוצה ברמות. שמחה שבחרתי בך 💗"</p><div class="who">— לקוחה חדשה</div></div></div><div class="slide"><div class="review"><div class="stars">★★★★★</div><p>"הגבות מושלמות הי החסרון הכי גדול שלי ומאז שעשית זה נראה לי מושלם. אני מרגישה הרבה יותר טוב עם עצמי. הכי טוב שעשיתי שבחרתי בך"</p><div class="who">— לקוחת מיקרובליידינג</div></div></div><div class="slide"><div class="review"><div class="stars">★★★★★</div><p>"תודה כל תודה על כל הידע שהעברת לי. מורה מושלמת ומקצועית שמסבירה הכל בצורה נדירה. שמחה שבחרתי לעשות את הקורס אצלך 💕"</p><div class="who">— תלמידת קורס</div></div></div><div class="slide"><div class="review"><div class="stars">★★★★★</div><p>"כבר מלא זמן רוצה לרשום לך ופשוט לא יצא לי אבל הגבות יצאו מושלם אהבתי ממש. יצא טבעי בדיוק כמו שרציתי תודה רבה. את אלופה!"</p><div class="who">— לקוחת גבות</div></div></div></div>
+  <button class="car-btn next" type="button" aria-label="הבא">‹</button>
+</div>
   </div>
 </section>
 
@@ -126,9 +140,27 @@
     </div>
   </div>
 </section>
-<section class="section"><div class="container"><div class="cta-band reveal">
-  <h2>מוכנה לגבות שתמיד חלמת עליהן?</h2><p>שלחי הודעה ומורן תחזור אלייך בהקדם, בדרך כלל תוך שעה 🌸</p><a class="btn btn-wa" href="#" data-wa="היי מורן, אשמח לקבוע תור 🌸"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.66.15-.2.3-.76.96-.93 1.16-.17.2-.34.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.41z"/></svg><span>קביעת תור בוואטסאפ</span></a>
-</div></div></section>
+<section class="section section-alt" id="contact">
+  <div class="container two-col">
+    <div class="reveal">
+      <span class="eyebrow">יצירת קשר</span>
+      <h2 class="section-title">השאירי פרטים <em class="gold">ונחזור אלייך</em></h2>
+      <p class="lead" style="margin-bottom:18px">הפרטים נשלחים למורן כהודעת וואטסאפ מוכנה – ומורן חוזרת אלייך בדרך כלל תוך שעה 🌸</p>
+      <div class="contact-list">
+        <div class="contact-item"><div class="icon">💬</div><div><small>וואטסאפ</small><a href="#" data-wa="היי מורן 🌸">050-733-0050</a></div></div>
+        <div class="contact-item"><div class="icon">📍</div><div><small>כתובת הקליניקה</small><span class="todo">להשלים: כתובת</span></div></div>
+      </div>
+    </div>
+    <div class="card reveal">
+      <form class="form" id="contactForm">
+        <label>שם<input name="name" required autocomplete="name"></label>
+        <label>מה מעניין אותך?<select name="service"><option value="">בחרי…</option><option>עיצוב ושיקום גבות</option><option>מיקרובליידינג ומיקרושיידינג</option><option>היפראליזם</option><option>הסרת פיגמנט</option><option>קורסים</option><option>אחר</option></select></label>
+        <label>הודעה<textarea name="message" rows="3" placeholder="כל מה שתרצי לספר או לשאול"></textarea></label>
+        <button class="btn btn-wa" type="submit"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.66.15-.2.3-.76.96-.93 1.16-.17.2-.34.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.41z"/></svg><span>שליחה בוואטסאפ</span></button>
+      </form>
+    </div>
+  </div>
+</section>
 
 </main>
 <footer class="footer">
@@ -144,6 +176,7 @@
         <a href="tel:+972507330050">טלפון: 050-733-0050</a>
         <a href="contact.html">כתובת ושעות פעילות</a>
         <a href="about.html">אודות מורן</a>
+        <a href="accessibility.html">הצהרת נגישות</a>
       </div>
     </div>
     <div class="copy">© <span data-year>2026</span> Moran Oded · כל הזכויות שמורות</div>
