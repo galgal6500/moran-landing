@@ -39,7 +39,7 @@ if (heroVideo) {
   heroVideo.addEventListener("playing", () => { if (vToggle) vToggle.hidden = false; }, { once: true });
   vToggle?.addEventListener("click", () => setPaused(!heroVideo.paused));
   if (matchMedia("(min-width: 900px)").matches) extras.forEach(v => {
-    v.addEventListener("loadedmetadata", () => { v.currentTime = +v.dataset.start || 0; v.dataset.ready = "1"; if (!heroVideo.paused) v.play().catch(() => {}); }, { once: true });
+    v.addEventListener("loadedmetadata", () => { v.currentTime = +v.dataset.start || 0; v.dataset.ready = "1"; if (!still() && !(vToggle && vToggle.classList.contains("paused"))) v.play().catch(() => {}); }, { once: true });
     v.preload = "auto"; v.load();
   });
   if (still()) setPaused(true);
