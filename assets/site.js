@@ -29,13 +29,19 @@ document.querySelectorAll("[data-social]").forEach(a => {
 const heroVideo = document.querySelector(".hero-video");
 const vToggle = document.querySelector(".video-toggle");
 if (heroVideo) {
+  const extras = [...document.querySelectorAll(".hero-extra")];
+  const allVids = () => [heroVideo, ...extras.filter(v => v.dataset.ready)];
   const setPaused = p => {
-    if (p) heroVideo.pause(); else heroVideo.play().catch(() => {});
+    allVids().forEach(v => { if (p) v.pause(); else v.play().catch(() => {}); });
     if (vToggle) { vToggle.classList.toggle("paused", p); vToggle.setAttribute("aria-label", p ? "הפעלת הסרטון" : "עצירת הסרטון"); }
   };
   const still = () => matchMedia("(prefers-reduced-motion: reduce)").matches || document.documentElement.classList.contains("a11y-still");
   heroVideo.addEventListener("playing", () => { if (vToggle) vToggle.hidden = false; }, { once: true });
   vToggle?.addEventListener("click", () => setPaused(!heroVideo.paused));
+  if (matchMedia("(min-width: 900px)").matches) extras.forEach(v => {
+    v.addEventListener("loadedmetadata", () => { v.currentTime = +v.dataset.start || 0; v.dataset.ready = "1"; if (!heroVideo.paused) v.play().catch(() => {}); }, { once: true });
+    v.preload = "auto"; v.load();
+  });
   if (still()) setPaused(true);
   new MutationObserver(() => { if (still()) setPaused(true); }).observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
 }
