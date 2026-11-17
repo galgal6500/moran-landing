@@ -2,9 +2,9 @@
 const SITE = {
   whatsapp: "972507330050", // מספר בפורמט בינלאומי, בלי + ובלי 0 בהתחלה
   // קישורים לרשתות – להדביק כאן את הכתובת המלאה של כל פרופיל
-  instagram: "",
-  tiktok: "",
-  facebook: "",
+  instagram: "https://www.instagram.com/moran_oded_brows",
+  tiktok: "https://www.tiktok.com/@moranoded",
+  facebook: "https://www.facebook.com/share/1JACKrFzzT/",
 };
 
 function waLink(message) {
@@ -55,6 +55,17 @@ if (burger && nav) {
     burger.setAttribute("aria-expanded", open ? "true" : "false");
   });
 }
+
+// תתי-תפריטים (טיפולים / קורסים) – נפתחים ונסגרים בלחיצה
+document.querySelectorAll(".nav .dropdown > button").forEach(btn => {
+  btn.setAttribute("aria-expanded", "false");
+  btn.addEventListener("click", () => {
+    const dd = btn.parentElement;
+    const open = !dd.classList.contains("open");
+    document.querySelectorAll(".nav .dropdown.open").forEach(d => { d.classList.remove("open"); d.querySelector("button").setAttribute("aria-expanded", "false"); });
+    if (open) { dd.classList.add("open"); btn.setAttribute("aria-expanded", "true"); }
+  });
+});
 
 // אנימציית כניסה בגלילה
 const io = new IntersectionObserver(entries => {

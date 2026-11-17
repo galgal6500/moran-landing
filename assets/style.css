@@ -415,3 +415,12 @@ html.a11y-still .reveal { opacity: 1; transform: none; }
   .hero-content .hero-actions { justify-content: center; }
   .video-toggle { z-index: 3; bottom: 18px; left: 18px; }
 }
+
+/* ===== תפריט בטלפון: תתי-תפריטים נפתחים רק בלחיצה ===== */
+.nav .dropdown > button .chev { display: inline-block; transition: transform .2s; font-size: .8em; }
+.nav .dropdown.open > button .chev { transform: rotate(180deg); }
+@media (max-width: 900px) {
+  .nav.open .dropdown .menu, .nav.open .dropdown:focus-within .menu, .nav.open .dropdown:hover .menu { display: none; }
+  .nav.open .dropdown.open .menu { display: block; }
+  .nav.open .menu a { font-size: 16px; padding: 10px 14px; color: var(--muted); }
+}
