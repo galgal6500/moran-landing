@@ -325,3 +325,66 @@ html.a11y-still *, html.a11y-still *::before { animation: none !important; trans
 html.a11y-still .reveal { opacity: 1; transform: none; }
 :focus-visible { outline: 2px solid #1F5FBF; outline-offset: 2px; }
 .header-cta .btn { white-space: nowrap; }
+
+/* ===== רשתות חברתיות ===== */
+.social { display: flex; gap: 6px; align-items: center; }
+.social a { width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; color: var(--dark); border: 1px solid #E6DDD3; transition: background .2s, color .2s; }
+.social a:hover { background: var(--dark); color: #fff; }
+.social svg { width: 17px; height: 17px; }
+.social-footer a { display: grid; color: var(--gold-light); border-color: rgba(255,255,255,.18); padding: 0; }
+.social-footer a:hover { background: var(--gold); color: var(--dark); }
+.footer .cols { grid-template-columns: 1.3fr 1fr 1fr 1fr; }
+@media (max-width: 900px) { .footer .cols { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .footer .cols { grid-template-columns: 1fr; } }
+@media (max-width: 640px) {
+  .header-cta .btn-taupe { display: none; }
+  .social { gap: 4px; }
+  .social a { width: 32px; height: 32px; }
+  .social svg { width: 15px; height: 15px; }
+}
+
+/* ===== סרטון בפתיחה ===== */
+.hero-video { transform: none; }
+.video-toggle { position: absolute; bottom: 18px; left: 18px; z-index: 3; width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(255,255,255,.6); background: rgba(0,0,0,.35); color: #fff; font-size: 12px; cursor: pointer; }
+.video-toggle .i-play, .video-toggle.paused .i-pause { display: none; }
+.video-toggle.paused .i-play { display: inline; }
+
+/* ===== דף קורס ===== */
+.course-card h3 { color: var(--dark); }
+.check-list { list-style: none; padding: 0 !important; }
+.check-list li { position: relative; padding-right: 30px; margin-bottom: 10px; }
+.check-list li::before { content: "✓"; position: absolute; right: 0; top: 0; width: 22px; height: 22px; border-radius: 50%; background: var(--beige); color: var(--gold-dark); display: grid; place-items: center; font-size: 13px; }
+.dets { display: grid; gap: 2px; margin: 10px 0 18px; }
+.det { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid #EEE7DF; }
+.det small { color: var(--muted); font-size: 14px; }
+.det b { font-weight: 500; color: var(--dark); text-align: left; }
+.get-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+@media (max-width: 900px) { .get-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .get-grid { grid-template-columns: 1fr; } }
+.get-item { display: flex; gap: 14px; background: var(--white); border-radius: var(--radius); padding: 22px; border: 1px solid #EEE7DF; }
+.get-icon { flex: 0 0 48px; height: 48px; border-radius: 50%; background: var(--beige); display: grid; place-items: center; font-size: 22px; }
+.get-item b { display: block; color: var(--dark); margin-bottom: 4px; }
+.get-item p { color: var(--muted); font-size: 15px; }
+.sessions { position: relative; display: grid; gap: 18px; }
+.sessions::before { content: ""; position: absolute; top: 10px; bottom: 10px; right: 35px; width: 1px; background: var(--taupe); }
+.session { position: relative; display: grid; grid-template-columns: 72px 1fr; gap: 20px; align-items: start; }
+.session-num { width: 72px; height: 72px; border-radius: 50%; background: var(--dark); color: #fff; display: grid; place-content: center; text-align: center; line-height: 1; z-index: 1; }
+.session-num small { font-size: 11px; letter-spacing: 1px; opacity: .8; margin-bottom: 4px; }
+.session-num b { font-family: "Cormorant Garamond", serif; font-size: 30px; font-weight: 500; }
+.session-body { background: var(--white); border: 1px solid #EEE7DF; border-radius: var(--radius); padding: 20px 24px; }
+.session-body h3 { font-size: 21px; margin-bottom: 4px; }
+.session-meta { color: var(--muted); font-size: 14px; margin-bottom: 10px; }
+.session-body ul { padding-right: 20px; }
+.session-body li { margin-bottom: 4px; }
+@media (max-width: 600px) {
+  .session { grid-template-columns: 52px 1fr; gap: 12px; }
+  .session-num { width: 52px; height: 52px; }
+  .session-num b { font-size: 22px; }
+  .sessions::before { right: 25px; }
+  .session-body { padding: 16px; }
+}
+@media (max-width: 640px) {
+  .header-row .logo b { white-space: nowrap; font-size: 17px; letter-spacing: 2.5px; }
+  .header-row .logo span { font-size: 9px; letter-spacing: 3px; white-space: nowrap; }
+  .social a { width: 30px; height: 30px; }
+}

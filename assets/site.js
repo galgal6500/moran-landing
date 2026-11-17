@@ -1,6 +1,10 @@
 // ===== הגדרות האתר – כאן משנים את מספר הוואטסאפ =====
 const SITE = {
   whatsapp: "972507330050", // מספר בפורמט בינלאומי, בלי + ובלי 0 בהתחלה
+  // קישורים לרשתות – להדביק כאן את הכתובת המלאה של כל פרופיל
+  instagram: "",
+  tiktok: "",
+  facebook: "",
 };
 
 function waLink(message) {
@@ -13,6 +17,28 @@ document.querySelectorAll("[data-wa]").forEach(a => {
   a.target = "_blank";
   a.rel = "noopener";
 });
+
+// קישורים לרשתות חברתיות
+document.querySelectorAll("[data-social]").forEach(a => {
+  const url = SITE[a.dataset.social];
+  if (url) { a.href = url; a.target = "_blank"; a.rel = "noopener"; }
+  else a.addEventListener("click", e => e.preventDefault());
+});
+
+// סרטון בפתיחה – עוצר לפי בקשה, בהעדפת "בלי תנועה" או אם אין קובץ
+const heroVideo = document.querySelector(".hero-video");
+const vToggle = document.querySelector(".video-toggle");
+if (heroVideo) {
+  const setPaused = p => {
+    if (p) heroVideo.pause(); else heroVideo.play().catch(() => {});
+    if (vToggle) { vToggle.classList.toggle("paused", p); vToggle.setAttribute("aria-label", p ? "הפעלת הסרטון" : "עצירת הסרטון"); }
+  };
+  const still = () => matchMedia("(prefers-reduced-motion: reduce)").matches || document.documentElement.classList.contains("a11y-still");
+  heroVideo.addEventListener("playing", () => { if (vToggle) vToggle.hidden = false; }, { once: true });
+  vToggle?.addEventListener("click", () => setPaused(!heroVideo.paused));
+  if (still()) setPaused(true);
+  new MutationObserver(() => { if (still()) setPaused(true); }).observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+}
 
 // תפריט בטלפון
 const burger = document.querySelector(".burger");
